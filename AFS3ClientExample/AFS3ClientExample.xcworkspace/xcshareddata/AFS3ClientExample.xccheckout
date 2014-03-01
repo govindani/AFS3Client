@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B2A34C46-F260-4625-8EDE-464E02CFCCAB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AFS3ClientExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>09EBB3B8-B855-484F-8F69-BDD83AEAD7C9</key>
+		<string>ssh://github.com/zodio/AFS3Client.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AFS3ClientExample/AFS3ClientExample.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>09EBB3B8-B855-484F-8F69-BDD83AEAD7C9</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/zodio/AFS3Client.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>09EBB3B8-B855-484F-8F69-BDD83AEAD7C9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>09EBB3B8-B855-484F-8F69-BDD83AEAD7C9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AFS3Client</string>
+		</dict>
+	</array>
+</dict>
+</plist>
