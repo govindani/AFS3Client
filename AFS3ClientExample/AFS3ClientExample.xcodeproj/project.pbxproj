@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		298FCEAD1913030600F3D5B5 /* AFS3Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 298FCEAC1913030600F3D5B5 /* AFS3Client.m */; };
 		299798F918C0CC3800AA07D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299798F818C0CC3800AA07D0 /* Foundation.framework */; };
 		299798FB18C0CC3800AA07D0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299798FA18C0CC3800AA07D0 /* CoreGraphics.framework */; };
 		299798FD18C0CC3800AA07D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299798FC18C0CC3800AA07D0 /* UIKit.framework */; };
@@ -21,7 +22,6 @@
 		2997991A18C0CC3800AA07D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299798FC18C0CC3800AA07D0 /* UIKit.framework */; };
 		2997992218C0CC3800AA07D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2997992018C0CC3800AA07D0 /* InfoPlist.strings */; };
 		2997992418C0CC3800AA07D0 /* AFS3ClientExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2997992318C0CC3800AA07D0 /* AFS3ClientExampleTests.m */; };
-		2997993418C1CD0F00AA07D0 /* AFS3Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 2997993118C1CD0F00AA07D0 /* AFS3Client.m */; };
 		29B1672F18C1D2A200A5EFB9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B1672E18C1D2A200A5EFB9 /* MobileCoreServices.framework */; };
 		A44549D3F5A9493A80B19EA0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 678A7D9D9D394669AAB56F73 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -38,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		039CC9A6E7A04A0BA0937AF6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		298FCEAB1913030600F3D5B5 /* AFS3Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFS3Client.h; sourceTree = "<group>"; };
+		298FCEAC1913030600F3D5B5 /* AFS3Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFS3Client.m; sourceTree = "<group>"; };
 		299798F518C0CC3800AA07D0 /* AFS3ClientExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFS3ClientExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		299798F818C0CC3800AA07D0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		299798FA18C0CC3800AA07D0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,8 +59,6 @@
 		2997991F18C0CC3800AA07D0 /* AFS3ClientExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AFS3ClientExampleTests-Info.plist"; sourceTree = "<group>"; };
 		2997992118C0CC3800AA07D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2997992318C0CC3800AA07D0 /* AFS3ClientExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFS3ClientExampleTests.m; sourceTree = "<group>"; };
-		2997992F18C1CD0F00AA07D0 /* AFS3Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFS3Client.h; sourceTree = "<group>"; };
-		2997993118C1CD0F00AA07D0 /* AFS3Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFS3Client.m; sourceTree = "<group>"; };
 		29B1672E18C1D2A200A5EFB9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		678A7D9D9D394669AAB56F73 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -89,6 +89,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		298FCEAA1913030600F3D5B5 /* AFS3Client */ = {
+			isa = PBXGroup;
+			children = (
+				298FCEAB1913030600F3D5B5 /* AFS3Client.h */,
+				298FCEAC1913030600F3D5B5 /* AFS3Client.m */,
+			);
+			name = AFS3Client;
+			path = ../../../AFS3Client;
+			sourceTree = "<group>";
+		};
 		299798EC18C0CC3800AA07D0 = {
 			isa = PBXGroup;
 			children = (
@@ -169,19 +179,10 @@
 		2997992D18C1CD0F00AA07D0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2997992E18C1CD0F00AA07D0 /* AFS3Client */,
+				298FCEAA1913030600F3D5B5 /* AFS3Client */,
 			);
 			name = Classes;
 			path = AFS3ClientExample/Classes;
-			sourceTree = "<group>";
-		};
-		2997992E18C1CD0F00AA07D0 /* AFS3Client */ = {
-			isa = PBXGroup;
-			children = (
-				2997992F18C1CD0F00AA07D0 /* AFS3Client.h */,
-				2997993118C1CD0F00AA07D0 /* AFS3Client.m */,
-			);
-			path = AFS3Client;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,7 +321,7 @@
 				2997990518C0CC3800AA07D0 /* main.m in Sources */,
 				2997990F18C0CC3800AA07D0 /* ZViewController.m in Sources */,
 				2997990918C0CC3800AA07D0 /* ZAppDelegate.m in Sources */,
-				2997993418C1CD0F00AA07D0 /* AFS3Client.m in Sources */,
+				298FCEAD1913030600F3D5B5 /* AFS3Client.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

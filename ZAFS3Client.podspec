@@ -10,6 +10,8 @@ Pod::Spec.new do |s|
 
   s.source_files = 'AFS3Client'
   s.requires_arc = true
+  s.platform     = :ios, "5.0"
 
   s.dependency 'AFNetworking', '~> 1.3'
+
 end
