@@ -122,6 +122,10 @@ NSString *const AFIS3AccessPolicyBucketOwnerFullControl = @"bucket-owner-full-co
     if (uploadProgressBlock) {
         [operation setUploadProgressBlock:uploadProgressBlock];
     }
+    
+    [operation setShouldExecuteAsBackgroundTaskWithExpirationHandler:^{
+        //Do nothing - keep executing?
+    }];
 	[self enqueueHTTPRequestOperation:operation];
 }
 
